@@ -105,7 +105,7 @@ export const projects: Project[] = [
     call: "Tracked stock per item and size, with barcode scans at the counter — so the owner knows which sizes to reorder before the back-to-school rush.",
     metrics: [["Barcode", "scanning"], ["Item × size", "stock"], ["React", "+ Node.js"]],
     link: "#",
-    image: "/images/work/barcode-inventory.jpg",
+    image: "/images/work/uniform-shop.jpg",
     imageNote: "Illustrative mockup · client under NDA",
   },
 ];
