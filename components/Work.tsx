@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { projects, type Project } from "@/data/portfolio";
 
 const FILTER_EVENT = "portfolio:filter";
@@ -15,11 +16,18 @@ export function filterWork(category: string) {
 
 function CardCover({ project: p, index: i }: { project: Project; index: number }) {
   const style = { "--c": shades[i % shades.length] } as React.CSSProperties;
-  const inner = (
+  const inner = p.image ? (
+    <>
+      <span className="card-tag">{p.tag}</span>
+      <Image className="card-shot" src={p.image} alt={`${p.title} website`} width={1440} height={900} sizes="(max-width: 860px) 100vw, 50vw" />
+      {p.link.startsWith("http") && <span className="card-visit">Visit live site ↗</span>}
+      {p.imageNote && <span className="card-note">{p.imageNote}</span>}
+    </>
+  ) : (
     <>
       <span className="card-tag">{p.tag}</span>
       <div className="card-cover-inner">
-        <span className="card-year">{p.year}</span>
+        <span className="card-year">{p.year || "\u00a0"}</span>
         <span className="card-cover-title">{p.title}</span>
         <span className="card-index" aria-hidden="true">{pad(i + 1)}</span>
       </div>

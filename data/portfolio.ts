@@ -30,6 +30,8 @@ export type Project = {
   call: string;
   metrics: [string, string][];
   link: string;
+  image?: string; // banner screenshot in public/images/work/
+  imageNote?: string; // small label on the banner, e.g. when it is a mockup
 };
 export type CaseSection = {
   heading: string;
@@ -48,7 +50,7 @@ export type Testimonial = { quote: string; name: string; role: string };
 export const focus: Focus[] = [
   { title: "AI Products", text: "Voice agents & LLM\nworkflows, end to end.", filter: "AI",        glyph: "◎" },
   { title: "Client Builds", text: "Real businesses,\nreal users, shipped.",   filter: "Freelance", glyph: "↗" },
-  { title: "Hackathons",  text: "Idea to demo,\nunder pressure.",            filter: "Hackathon", glyph: "◆" },
+  { title: "Fintech",     text: "Payments that\nrecover themselves.",       filter: "Fintech",   glyph: "◆" },
 ];
 
 /* Strip of 4 numbers (like GAZU's delivery / returns row) */
@@ -70,6 +72,7 @@ export const projects: Project[] = [
     call: "Let the AI act on its own only inside a deterministic policy engine — a ₹50K ceiling plus a full audit trail — so merchants can trust it.",
     metrics: [["₹50K", "action ceiling"], ["Hinglish", "voice calls"], ["100%", "audit-logged"]],
     link: "https://payrevive.xyz",
+    image: "/images/work/payrevive.jpg",
   },
   {
     title: "PrepSense",
@@ -80,36 +83,30 @@ export const projects: Project[] = [
     call: "Made it role-agnostic instead of tech-only, so any job seeker gets field-specific feedback and questions.",
     metrics: [["ATS", "resume check"], ["5–7", "tailored Qs"], ["Voice", "mock interviews"]],
     link: "https://prep-sense-kappa.vercel.app",
-  },
-  {
-    title: "BlockEd",
-    tag: "Hackathon winner",
-    category: ["Hackathon", "Web3"],
-    year: "2025",
-    desc: "Blockchain-based education platform with gamified learning and NFT on-chain certificates. Built with React, TypeScript and Solidity.",
-    call: "Used on-chain NFT certificates so learning credentials are verifiable by anyone, not just the platform.",
-    metrics: [["Winner", "HackQuest"], ["NFT", "certificates"], ["Apr '25", "MSIT"]],
-    link: "#",
+    image: "/images/work/prepsense.jpg",
   },
   {
     title: "Real Estate Platform",
-    tag: "Freelance",
+    tag: "Live · Freelance",
     category: ["Freelance"],
-    year: "—",
+    year: "",
     desc: "Property listing and lead-management web app for a real estate business, with searchable browsing and lead capture.",
     call: "Built v1 around the two things that drive the business: finding a property fast and capturing the lead.",
     metrics: [["Search", "listings"], ["Leads", "captured"], ["React", "+ Node.js"]],
-    link: "#",
+    link: "https://www.sorrelbuildcon.com",
+    image: "/images/work/sorrel.jpg",
   },
   {
-    title: "Barcode Inventory",
-    tag: "Freelance",
+    title: "Uniform Shop Inventory",
+    tag: "Freelance · Private",
     category: ["Freelance"],
-    year: "—",
-    desc: "Inventory management system for a retail shop with barcode-scanner integration for real-time stock tracking.",
-    call: "Plugged into barcode scanners so stock updates happen at the counter, in real time, with no manual entry.",
-    metrics: [["Barcode", "scanning"], ["Real-time", "stock"], ["React", "+ Node.js"]],
+    year: "",
+    desc: "Inventory management system for a school uniform shop, with barcode scanning to track stock by item and size in real time.",
+    call: "Tracked stock per item and size, with barcode scans at the counter — so the owner knows which sizes to reorder before the back-to-school rush.",
+    metrics: [["Barcode", "scanning"], ["Item × size", "stock"], ["React", "+ Node.js"]],
     link: "#",
+    image: "/images/work/barcode-inventory.jpg",
+    imageNote: "Illustrative mockup · client under NDA",
   },
 ];
 
