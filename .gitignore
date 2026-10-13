@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+
+# personal source files (not used by the site)
+IMG_9725.HEIC
+*.HEIC
+Aditya_Sai_Resume.pdf
+!public/assets/Aditya_Sai_Resume.pdf
+Portfolio Design reference.jpg
+static-version/
