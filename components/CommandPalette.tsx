@@ -15,7 +15,7 @@ type Command = { label: string; hint: string; go?: string; run?: () => void };
 const commands: Command[] = [
   { label: "Work", hint: "section", go: "#work" },
   { label: "Case study", hint: "section", go: "#case-study" },
-  { label: "Experience / Changelog", hint: "section", go: "#changelog" },
+  { label: "Experience", hint: "section", go: "#experience" },
   ...(teardowns.length ? [{ label: "Product teardowns", hint: "section", go: "#teardowns" }] : []),
   { label: "Toolkit", hint: "section", go: "#toolkit" },
   { label: "Contact", hint: "section", go: "#contact" },

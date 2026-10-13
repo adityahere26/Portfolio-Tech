@@ -7,7 +7,7 @@ import { openPalette } from "./CommandPalette";
 const nav = [
   { href: "#work", label: "Work" },
   { href: "#case-study", label: "Case Study" },
-  { href: "#changelog", label: "Experience" },
+  { href: "#experience", label: "Experience" },
   teardowns.length ? { href: "#teardowns", label: "Teardowns" } : { href: "#toolkit", label: "Toolkit" },
 ];
 
@@ -22,13 +22,13 @@ export default function Header() {
     <>
       {/* Announcement bar (GAZU: "Free delivery…") */}
       <div className="topbar">
-        <span>{profile.availability}</span>
+        <span>{profile.tagline}</span>
         <nav aria-label="Quick links">
           <a href={profile.resume} target="_blank" rel="noopener">Resume</a>
           <span className="sep">|</span>
           <a href={profile.links.linkedin} target="_blank" rel="noopener">LinkedIn</a>
           <span className="sep">|</span>
-          <a href="#contact">Hire me</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
 

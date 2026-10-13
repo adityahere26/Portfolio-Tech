@@ -1,16 +1,14 @@
-import { changelog } from "@/data/portfolio";
+import { experience } from "@/data/portfolio";
 
-export default function Changelog() {
+export default function Experience() {
   return (
-    <section className="section section-dark" id="changelog">
+    <section className="section section-dark" id="experience">
       <div className="section-head">
-        <h2 className="section-title">Changelog</h2>
-        <span className="mono">Release notes for a career</span>
+        <h2 className="section-title">Experience</h2>
       </div>
       <ol className="timeline">
-        {changelog.map((c) => (
-          <li className="tl-item reveal" key={c.version}>
-            <div className="tl-version">{c.version}</div>
+        {experience.map((c) => (
+          <li className="tl-item reveal" key={c.role + c.date}>
             <div className="tl-date">{c.date}</div>
             <div>
               <div className="tl-role">{c.role}</div>

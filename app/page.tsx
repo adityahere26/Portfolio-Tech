@@ -5,7 +5,7 @@ import Feature from "@/components/Feature";
 import Stats from "@/components/Stats";
 import Work from "@/components/Work";
 import CaseStudy from "@/components/CaseStudy";
-import Changelog from "@/components/Changelog";
+import Experience from "@/components/Experience";
 import Teardowns from "@/components/Teardowns";
 import Toolkit from "@/components/Toolkit";
 import Testimonials from "@/components/Testimonials";
@@ -26,7 +26,7 @@ export default function Home() {
         <Stats />
         <Work />
         <CaseStudy />
-        <Changelog />
+        <Experience />
         <Teardowns />
         <Toolkit />
         <Testimonials />

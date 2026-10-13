@@ -7,7 +7,7 @@ export const profile = {
   name: "Aditya Sai",
   heroWord: "ADITYA",                       // the giant word in the hero
   role: "Product Manager",
-  availability: "Open to PM / APM roles · Delhi NCR · 2026",
+  tagline: "Product Manager",       // text in the black top bar
   email: "royaditya2019@gmail.com",
   phone: "+91 92055 86101",
   resume: "/assets/Aditya_Sai_Resume.pdf",
@@ -41,7 +41,7 @@ export type CaseSection = {
   list?: string[];
   funnel?: [string, number][];
 };
-export type Release = { version: string; date: string; role: string; org: string; notes: string[] };
+export type Role = { date: string; role: string; org: string; notes: string[] };
 export type Teardown = {
   company: string;
   lens: string;          // the angle the teardown takes
@@ -170,10 +170,9 @@ export const caseStudy: {
   ],
 };
 
-/* Experience, newest first. "version" is just for fun (major = new role). */
-export const changelog: Release[] = [
+/* Experience, newest first */
+export const experience: Role[] = [
   {
-    version: "v2.0",
     date: "Feb 2026 — Now",
     role: "AI Filmmaker Project Associate",
     org: "PW (PhysicsWallah) · Apprenticeship · Noida, Hybrid",
@@ -186,14 +185,12 @@ export const changelog: Release[] = [
     ],
   },
   {
-    version: "v1.1",
     date: "Apr 2025",
     role: "Winner, HackQuest Hackathon",
     org: "MSIT",
     notes: ["Built BlockEd — gamified learning with NFT on-chain certificates (React, TypeScript, Solidity)"],
   },
   {
-    version: "v1.0",
     date: "Jan 2025 — Jul 2025",
     role: "Tech & Product Intern",
     org: "HighFurries · Dwarka",
@@ -205,7 +202,6 @@ export const changelog: Release[] = [
     ],
   },
   {
-    version: "v0.1",
     date: "B.Tech",
     role: "Computer Science",
     org: "Netaji Subhas University of Technology, Delhi",
@@ -223,7 +219,7 @@ export const teardowns: Teardown[] = [
     testFirst: "Batch Finder — a short quiz and diagnostic that recommends one batch on one card",
     win: "+10% payment conversion, refunds and retention flat",
     link: "/teardowns/physicswallah-teardown.pdf",
-    cover: "/images/teardowns/physicswallah.jpg",
+    cover: "/images/teardowns/physicswallah-cover.jpg",
   },
   {
     company: "Zepto",
@@ -233,7 +229,7 @@ export const teardowns: Teardown[] = [
     testFirst: "Smart cart rail of cheap, relevant add-ons, plus an all-in price",
     win: "+₹20 AOV with delivery time and margin flat",
     link: "/teardowns/zepto-teardown.pdf",
-    cover: "/images/teardowns/zepto.jpg",
+    cover: "/images/teardowns/zepto-cover.jpg",
   },
   {
     company: "Zomato",
@@ -243,7 +239,7 @@ export const teardowns: Teardown[] = [
     testFirst: "All-in price shown from the menu, not only at checkout",
     win: "+2 pts checkout conversion",
     link: "/teardowns/zomato-teardown.pdf",
-    cover: "/images/teardowns/zomato.jpg",
+    cover: "/images/teardowns/zomato-cover.jpg",
   },
   {
     company: "Uber",
@@ -253,7 +249,7 @@ export const teardowns: Teardown[] = [
     testFirst: "Fare lock on re-match after a driver cancels",
     win: "+2 pts 7-day rebooking, driver earnings flat",
     link: "/teardowns/uber-teardown.pdf",
-    cover: "/images/teardowns/uber.jpg",
+    cover: "/images/teardowns/uber-cover.jpg",
   },
   {
     company: "Airbnb",
@@ -263,7 +259,7 @@ export const teardowns: Teardown[] = [
     testFirst: "A “Plan your trip” card with three nearby services after booking",
     win: "More extras per 100 stays, cancellations flat",
     link: "/teardowns/airbnb-teardown.pdf",
-    cover: "/images/teardowns/airbnb.jpg",
+    cover: "/images/teardowns/airbnb-cover.jpg",
   },
   {
     company: "PlayStation",
@@ -273,7 +269,7 @@ export const teardowns: Teardown[] = [
     testFirst: "A value recap shown before renewal",
     win: "+2 pts renewal rate, revenue per member flat",
     link: "/teardowns/playstation-teardown.pdf",
-    cover: "/images/teardowns/playstation.jpg",
+    cover: "/images/teardowns/playstation-cover.jpg",
   },
   {
     company: "GitHub",
@@ -283,7 +279,37 @@ export const teardowns: Teardown[] = [
     testFirst: "Opt-in PR readiness gate with a what's-missing checklist",
     win: "Fewer review hours per merged PR, first-timer merges down ≤5%",
     link: "/teardowns/github-teardown.pdf",
-    cover: "/images/teardowns/github.jpg",
+    cover: "/images/teardowns/github-cover.jpg",
+  },
+  {
+    company: "WhatsApp",
+    lens: "Trust in the inbox",
+    question: "How does WhatsApp keep the inbox trusted while business messaging grows?",
+    stat: ["99.67L", "Indian accounts banned in January 2025"],
+    testFirst: "Default-on message requests for unknown numbers in India",
+    win: "Fewer scam reports per 1,000 users, business read rate flat",
+    link: "/teardowns/whatsapp-teardown.pdf",
+    cover: "/images/teardowns/whatsapp-cover.jpg",
+  },
+  {
+    company: "Instagram",
+    lens: "Friends' content",
+    question: "How does Instagram keep friends visible as Reels takes over?",
+    stat: ["51%", "of US Instagram time now spent on Reels"],
+    testFirst: "An “Open Instagram to” setting: Home, Following or Favorites",
+    win: "More friends-first sessions, time spent and ads flat",
+    link: "/teardowns/instagram-teardown.pdf",
+    cover: "/images/teardowns/instagram-cover.jpg",
+  },
+  {
+    company: "Snapchat",
+    lens: "North America & Europe retention",
+    question: "How does Snapchat keep friend groups active where each user is worth the most?",
+    stat: ["−7%", "North America daily users, to 92M"],
+    testFirst: "A weekly reconnect nudge naming an active close friend",
+    win: "More lapsing users back weekly, opt-outs and uninstalls flat",
+    link: "/teardowns/snapchat-teardown.pdf",
+    cover: "/images/teardowns/snapchat-cover.jpg",
   },
 ];
 

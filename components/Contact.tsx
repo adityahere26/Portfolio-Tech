@@ -5,7 +5,7 @@ export default function Contact() {
   const { email, phone, links, resume } = profile;
   return (
     <section className="contact" id="contact">
-      <p className="eyebrow light">Roadmap slot open · v1.0 unreleased</p>
+      <p className="eyebrow light">Get in touch</p>
       <h2 className="contact-title">Need a PM who<br />puts users first<br />and ships?</h2>
 
       <div className="contact-rows">

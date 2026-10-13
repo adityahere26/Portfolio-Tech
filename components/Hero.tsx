@@ -41,8 +41,6 @@ export default function Hero() {
         <a href="#work" className="btn btn-dark">See the work</a>
         <a href={profile.resume} className="link-underline" target="_blank" rel="noopener">Download resume</a>
       </div>
-
-      <p className="hero-badge reveal">Open to<br />PM roles<br />2026</p>
     </section>
   );
 }
