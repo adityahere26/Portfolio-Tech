@@ -16,11 +16,11 @@ const commands: Command[] = [
   { label: "Work", hint: "section", go: "#work" },
   { label: "Case study", hint: "section", go: "#case-study" },
   { label: "Experience / Changelog", hint: "section", go: "#changelog" },
-  ...(teardowns.length ? [{ label: "Teardowns & PRDs", hint: "section", go: "#teardowns" }] : []),
+  ...(teardowns.length ? [{ label: "Product teardowns", hint: "section", go: "#teardowns" }] : []),
   { label: "Toolkit", hint: "section", go: "#toolkit" },
   { label: "Contact", hint: "section", go: "#contact" },
   ...projects.map((p) => ({ label: p.title, hint: "project", go: p.link.startsWith("http") ? p.link : "#work" })),
-  ...teardowns.map((t) => ({ label: `${t.company} — ${t.topic}`, hint: t.type.toLowerCase(), go: t.link === "#" ? "#teardowns" : t.link })),
+  ...teardowns.map((t) => ({ label: `${t.company} teardown — ${t.lens}`, hint: "teardown", go: t.link })),
   { label: "Open resume", hint: "link", go: profile.resume },
   { label: "Copy email", hint: "action", run: () => navigator.clipboard?.writeText(profile.email) },
 ];

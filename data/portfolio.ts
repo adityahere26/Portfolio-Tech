@@ -42,7 +42,16 @@ export type CaseSection = {
   funnel?: [string, number][];
 };
 export type Release = { version: string; date: string; role: string; org: string; notes: string[] };
-export type Teardown = { company: string; topic: string; type: string; link: string };
+export type Teardown = {
+  company: string;
+  lens: string;          // the angle the teardown takes
+  question: string;      // the hook from the cover slide
+  stat: [string, string]; // [headline number, what it means]
+  testFirst: string;     // the MVP the RICE ranking picked
+  win: string;           // what success looks like in the A/B test
+  link: string;          // PDF in public/teardowns/
+  cover: string;         // first slide in public/images/teardowns/
+};
 export type ToolGroup = { group: string; items: string[] };
 export type Testimonial = { quote: string; name: string; role: string };
 
@@ -204,9 +213,82 @@ export const changelog: Release[] = [
   },
 ];
 
-/* Product teardowns / PRDs. The section stays hidden until you add one, e.g.
-   { company: "Zepto", topic: "10-minute delivery: retention loops", type: "Teardown", link: "https://..." } */
-export const teardowns: Teardown[] = [];
+/* Product teardowns (from the "Product Teardown" folder). The first one is shown as the featured card. */
+export const teardowns: Teardown[] = [
+  {
+    company: "PhysicsWallah",
+    lens: "Free-to-paid conversion",
+    question: "Why are daily users up 26% while paid users are up only 2.4%?",
+    stat: ["+26% vs +2.4%", "daily vs paid users, Q1 FY27"],
+    testFirst: "Batch Finder — a short quiz and diagnostic that recommends one batch on one card",
+    win: "+10% payment conversion, refunds and retention flat",
+    link: "/teardowns/physicswallah-teardown.pdf",
+    cover: "/images/teardowns/physicswallah.jpg",
+  },
+  {
+    company: "Zepto",
+    lens: "Average order value",
+    question: "Why does India's second-largest quick-commerce app have the smallest basket?",
+    stat: ["₹387", "average order, vs ₹665–700 for rivals"],
+    testFirst: "Smart cart rail of cheap, relevant add-ons, plus an all-in price",
+    win: "+₹20 AOV with delivery time and margin flat",
+    link: "/teardowns/zepto-teardown.pdf",
+    cover: "/images/teardowns/zepto.jpg",
+  },
+  {
+    company: "Zomato",
+    lens: "Order frequency under rising fees",
+    question: "Fees keep rising. How do you keep people ordering as often?",
+    stat: ["₹2 → ₹14.90", "platform fee in three years"],
+    testFirst: "All-in price shown from the menu, not only at checkout",
+    win: "+2 pts checkout conversion",
+    link: "/teardowns/zomato-teardown.pdf",
+    cover: "/images/teardowns/zomato.jpg",
+  },
+  {
+    company: "Uber",
+    lens: "Ride reliability in India",
+    question: "When a driver cancels, how do you keep the rider from switching apps?",
+    stat: ["₹1,511 cr", "Uber India FY25 loss"],
+    testFirst: "Fare lock on re-match after a driver cancels",
+    win: "+2 pts 7-day rebooking, driver earnings flat",
+    link: "/teardowns/uber-teardown.pdf",
+    cover: "/images/teardowns/uber.jpg",
+  },
+  {
+    company: "Airbnb",
+    lens: "Stay to whole trip",
+    question: "Airbnb booked the stay. Who books the rest of the trip?",
+    stat: ["~35%", "of first-time hotel guests later book a home"],
+    testFirst: "A “Plan your trip” card with three nearby services after booking",
+    win: "More extras per 100 stays, cancellations flat",
+    link: "/teardowns/airbnb-teardown.pdf",
+    cover: "/images/teardowns/airbnb.jpg",
+  },
+  {
+    company: "PlayStation",
+    lens: "PS Plus retention",
+    question: "When prices rise and playtime dips, how do you keep PS Plus members renewing?",
+    stat: ["−36%", "PS5 shipments in the quarter"],
+    testFirst: "A value recap shown before renewal",
+    win: "+2 pts renewal rate, revenue per member flat",
+    link: "/teardowns/playstation-teardown.pdf",
+    cover: "/images/teardowns/playstation.jpg",
+  },
+  {
+    company: "GitHub",
+    lens: "Maintainer review load",
+    question: "When AI makes pull requests free to write, who pays the cost of reviewing them?",
+    stat: ["518.7M", "pull requests merged in a year, up 29%"],
+    testFirst: "Opt-in PR readiness gate with a what's-missing checklist",
+    win: "Fewer review hours per merged PR, first-timer merges down ≤5%",
+    link: "/teardowns/github-teardown.pdf",
+    cover: "/images/teardowns/github.jpg",
+  },
+];
+
+/* The steps every teardown follows (shown above the cards) */
+export const teardownMethod = ["Problem", "Users", "Journey", "Pain points", "RICE", "MVP", "A/B test", "Go-to-market", "Risks"];
 
 /* Skills grouped by area */
 export const toolkit: ToolGroup[] = [
