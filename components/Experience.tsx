@@ -13,7 +13,7 @@ export default function Experience() {
             <div>
               <div className="tl-role">{c.role}</div>
               <div className="tl-org">{c.org}</div>
-              <ul className="tl-notes">{c.notes.map((n) => <li key={n}>{n}</li>)}</ul>
+              {c.notes.length > 0 && <ul className="tl-notes">{c.notes.map((n) => <li key={n}>{n}</li>)}</ul>}
             </div>
           </li>
         ))}

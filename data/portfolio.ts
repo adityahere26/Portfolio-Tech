@@ -185,15 +185,9 @@ export const experience: Role[] = [
     ],
   },
   {
-    date: "Apr 2025",
-    role: "Winner, HackQuest Hackathon",
-    org: "MSIT",
-    notes: ["Built BlockEd — gamified learning with NFT on-chain certificates (React, TypeScript, Solidity)"],
-  },
-  {
-    date: "Jan 2025 — Jul 2025",
-    role: "Tech & Product Intern",
-    org: "HighFurries · Dwarka",
+    date: "Jan 2025 — Jan 2026",
+    role: "Tech & Product",
+    org: "HighFurries · Dwarka · Full-time",
     notes: [
       "Researched user needs and competitors to scope and prioritise features for a 2–3 person product team",
       "Built and shipped full-stack features (React, Node.js, REST APIs) from development to deployment",
@@ -202,10 +196,16 @@ export const experience: Role[] = [
     ],
   },
   {
-    date: "B.Tech",
-    role: "Computer Science",
+    date: "Apr 2025",
+    role: "Winner, HackQuest Hackathon",
+    org: "MSIT",
+    notes: ["Built BlockEd — gamified learning with NFT on-chain certificates (React, TypeScript, Solidity)"],
+  },
+  {
+    date: "2022 — 2026",
+    role: "B.Tech, Computer Science",
     org: "Netaji Subhas University of Technology, Delhi",
-    notes: ["Where the engineering foundation came from"],
+    notes: [],
   },
 ];
 
