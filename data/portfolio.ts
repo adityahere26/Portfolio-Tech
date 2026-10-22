@@ -102,7 +102,7 @@ export const projects: Project[] = [
     desc: "Property listing and lead-management web app for a real estate business, with searchable browsing and lead capture.",
     call: "Built v1 around the two things that drive the business: finding a property fast and capturing the lead.",
     metrics: [["Search", "listings"], ["Leads", "captured"], ["React", "+ Node.js"]],
-    link: "https://www.sorrelbuildcon.com",
+    link: "#",
     image: "/images/work/sorrel.jpg",
   },
   {
