@@ -1,13 +1,13 @@
 /* =====================================================================
    PORTFOLIO CONTENT — edit this file to update the site.
-   Content below is taken from Aditya_Sai_Resume.pdf.
+   Content below is taken from Aditya_Sai_Product_Resume.pdf.
    ===================================================================== */
 
 export const profile = {
   name: "Aditya Sai",
   heroWord: "ADITYA",                       // the giant word in the hero
-  role: "Product Manager",
-  tagline: "Product Manager",       // text in the black top bar
+  role: "Associate Product Manager",
+  tagline: "Associate Product Manager", // text in the black top bar
   email: "royaditya2019@gmail.com",
   phone: "+91 92055 86101",
   resume: "/assets/Aditya_Sai_Resume.pdf",
@@ -174,25 +174,24 @@ export const caseStudy: {
 export const experience: Role[] = [
   {
     date: "Feb 2026 — Now",
-    role: "AI Filmmaker Project Associate",
+    role: "AI Trainee",
     org: "PW (PhysicsWallah) · Apprenticeship · Noida, Hybrid",
     notes: [
-      "Worked on 20+ AI filmmaking projects for the PW App / PI section",
-      "Researched and tested 30+ AI tools to improve content production workflows",
-      "Coordinated with 8+ team members across creative and production teams",
+      "Contributed to 20+ AI filmmaking projects for the PW App / PI section, supporting AI-enabled content production",
+      "Researched and tested 30+ AI tools to inform content-production workflow decisions",
+      "Coordinated with 8+ creative and production team members; managed timelines, deliverables and stakeholder communication",
       "Tracked content metrics and contributed to improving content performance",
-      "Managed timelines, meetings, deliverables and stakeholder communication",
     ],
   },
   {
     date: "Jan 2025 — Jan 2026",
-    role: "Tech & Product",
-    org: "HighFurries · Dwarka · Full-time",
+    role: "Associate Product Manager",
+    org: "HighFurries · Dwarka, Delhi",
     notes: [
-      "Researched user needs and competitors to scope and prioritise features for a 2–3 person product team",
-      "Built and shipped full-stack features (React, Node.js, REST APIs) from development to deployment",
-      "Integrated third-party APIs, improved frontend performance, kept quality high through peer review",
-      "Supported planning and execution of “Paint with Pets”, a live customer engagement event",
+      "Ran user research and competitor analysis to define requirements and prioritise the roadmap using RICE and MoSCoW for a 2–3 person product team",
+      "Owned research for the doctors database and partnered with design and engineering on the “AI Disease Scan” feature from requirements through deployment",
+      "Supported third-party API integrations and frontend performance optimisation as part of feature delivery",
+      "Planned and ran “Paint with Pets”, a live customer-engagement event that achieved an 80% conversion rate",
     ],
   },
   {
@@ -318,10 +317,10 @@ export const teardownMethod = ["Problem", "Users", "Journey", "Pain points", "RI
 
 /* Skills grouped by area */
 export const toolkit: ToolGroup[] = [
-  { group: "Product", items: ["Product strategy", "Roadmapping", "PRD & spec writing", "RICE / MoSCoW", "User research", "Competitive analysis", "Go-to-market"] },
-  { group: "Execution", items: ["Agile / Scrum", "Sprint planning", "A/B testing", "Stakeholder management", "Cross-functional collaboration"] },
-  { group: "Technical", items: ["TypeScript", "JavaScript", "Python", "React / Next.js", "Node.js / Express", "REST APIs", "SQL / PostgreSQL", "Prisma", "MongoDB", "Redis"] },
-  { group: "Tools", items: ["Figma", "Jira", "Notion", "Git", "Docker", "CI basics"] },
+  { group: "Product", items: ["Product strategy", "Roadmapping", "PRD & spec writing", "RICE / MoSCoW", "Go-to-market support"] },
+  { group: "Research & Analytics", items: ["Market research", "Competitive analysis", "User research", "Funnel analysis", "A/B testing", "NPS & retention metrics", "Data-driven decisions"] },
+  { group: "Execution", items: ["Agile / Scrum", "Sprint planning", "User-flow optimisation", "Stakeholder management", "Cross-functional collaboration"] },
+  { group: "Technical & Tools", items: ["TypeScript", "JavaScript", "Python", "React / Next.js", "Node.js / Express", "REST APIs", "SQL / PostgreSQL", "MongoDB", "Redis", "Git", "Docker", "Jira", "Notion", "Figma"] },
 ];
 
 /* The section stays hidden until you add one, e.g.
