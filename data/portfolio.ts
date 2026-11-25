@@ -11,7 +11,7 @@ export const profile = {
   email: "royaditya2019@gmail.com",
   phone: "+91 92055 86101",
   resume: "/assets/Aditya_Sai_Resume.pdf",
-  photo: "/images/profile.png",            // circular portrait PNG (transparent corners) in public/images/ (silhouette shows until it exists)
+  photo: "/images/profile.png",            // transparent-background cut-out PNG in public/images/ (silhouette shows until it exists)
   links: {
     linkedin: "https://www.linkedin.com/in/adityasai26",
     github: "",                            // add your GitHub URL to show it

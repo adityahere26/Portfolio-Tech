@@ -16,7 +16,7 @@ export default function Hero() {
       </h1>
 
       {hasPhoto ? (
-        <HeroPhoto src={profile.photo} alt={`Portrait of ${profile.name}`} width={900} height={900} />
+        <HeroPhoto src={profile.photo} alt={`Portrait of ${profile.name}`} width={1007} height={824} />
       ) : (
         <figure className="hero-photo">
           <svg className="silhouette" viewBox="0 0 300 520" aria-hidden="true">

@@ -124,7 +124,7 @@ img { display: block; max-width: 100%; }
   animation: fadeUp 1.2s .2s cubic-bezier(.2,.7,.2,1) both;
 }
 .hero-photo img { height: 100% !important; width: auto !important; object-fit: contain; filter: grayscale(1) contrast(1.05); }
-.hero-photo.has-photo { bottom: 48px; height: 68%; aspect-ratio: 1 / 1; border-radius: 50%; overflow: hidden; pointer-events: auto; cursor: none; touch-action: pan-y; }
+.hero-photo.has-photo { bottom: 0; height: 74%; aspect-ratio: 1007 / 824; pointer-events: auto; cursor: none; touch-action: pan-y; }
 
 /* --- Liquid-glass colour lens on the hero photo --- */
 @property --r { syntax: "<length>"; inherits: true; initial-value: 0px; }
@@ -474,7 +474,7 @@ img { display: block; max-width: 100%; }
   .hero-word { grid-row: 2; margin: 30px 0 0; font-size: 21vw; }
   .hero > * { min-width: 0; }
   .hero-photo { position: relative; grid-row: 3; left: auto; bottom: auto; transform: none; justify-self: center; height: 300px; margin-top: -60px; animation: none; }
-  .hero-photo.has-photo { height: min(300px, 78vw); margin-top: -40px; }
+  .hero-photo.has-photo { height: min(310px, 75vw); margin-top: -50px; }
   .hero-ctas { grid-row: 5; margin-top: 24px; }
 
   .band-inner { grid-template-columns: 1fr; gap: 20px; }
