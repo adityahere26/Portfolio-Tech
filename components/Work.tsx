@@ -79,6 +79,11 @@ export default function Work() {
                 <div key={l}><strong>{v}</strong><span>{l}</span></div>
               ))}
             </div>
+            {p.repo && (
+              <a className="card-code" href={p.repo} target="_blank" rel="noopener" aria-label={`${p.title} source code on GitHub`}>
+                View code on GitHub ↗
+              </a>
+            )}
           </article>
         ))}
       </div>

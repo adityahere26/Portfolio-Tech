@@ -28,6 +28,8 @@ export default function Header() {
           <span className="sep">|</span>
           <a href={profile.links.linkedin} target="_blank" rel="noopener">LinkedIn</a>
           <span className="sep">|</span>
+          <a href={profile.links.github} target="_blank" rel="noopener">GitHub</a>
+          <span className="sep">|</span>
           <a href="#contact">Contact</a>
         </nav>
       </div>

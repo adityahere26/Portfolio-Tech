@@ -14,7 +14,7 @@ export const profile = {
   photo: "/images/profile.png",            // transparent-background cut-out PNG in public/images/ (silhouette shows until it exists)
   links: {
     linkedin: "https://www.linkedin.com/in/adityasai26",
-    github: "",                            // add your GitHub URL to show it
+    github: "https://github.com/adityahere26",
     writing: "",                           // add Medium / Substack / Notion URL to show it
   },
 };
@@ -30,6 +30,7 @@ export type Project = {
   call: string;
   metrics: [string, string][];
   link: string;
+  repo?: string; // GitHub repository URL, shown as a "View code" link on the card
   image?: string; // banner screenshot in public/images/work/
   imageNote?: string; // small label on the banner, e.g. when it is a mockup
 };
@@ -81,6 +82,7 @@ export const projects: Project[] = [
     call: "Let the AI act on its own only inside a deterministic policy engine — a ₹50K ceiling plus a full audit trail — so merchants can trust it.",
     metrics: [["₹50K", "action ceiling"], ["Hinglish", "voice calls"], ["100%", "audit-logged"]],
     link: "https://payrevive.xyz",
+    repo: "https://github.com/adityahere26/PayRevive",
     image: "/images/work/payrevive.jpg",
   },
   {
@@ -92,6 +94,7 @@ export const projects: Project[] = [
     call: "Made it role-agnostic instead of tech-only, so any job seeker gets field-specific feedback and questions.",
     metrics: [["ATS", "resume check"], ["5–7", "tailored Qs"], ["Voice", "mock interviews"]],
     link: "https://prep-sense-kappa.vercel.app",
+    repo: "https://github.com/adityahere26/PrepSense",
     image: "/images/work/prepsense.jpg",
   },
   {
